@@ -1,0 +1,15 @@
+{
+  "name": "bold16-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A fork from base16 tmr dark, add some interesting css and better supports",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/alxtz/bold16-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
