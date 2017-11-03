@@ -3,8 +3,8 @@
 .syntax--comment {
   color: @gray;
   opacity: 0.5;
-  // font-family: 'Script12 BT';
   font-style: italic;
+  font-weight: 600;
 
   .syntax--markup.syntax--link {
     color: @gray;
@@ -42,6 +42,7 @@
   &.syntax--control {
     color: @purple;
     font-weight: bold;
+    -webkit-font-smoothing: subpixel-antialiased;
   }
 
   &.syntax--operator {
@@ -49,10 +50,12 @@
     &.syntax--of {
       color: @purple;
       font-weight: bold;
+      -webkit-font-smoothing: subpixel-antialiased;
     }
     &.syntax--in {
       color: @purple;
       font-weight: bold;
+      -webkit-font-smoothing: subpixel-antialiased;
     }
   }
 
@@ -68,6 +71,7 @@
 .syntax--storage {
   color: @purple;
   font-weight: bolder;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .syntax--constant {
@@ -139,6 +143,7 @@
     &.syntax--bold {
       color: @yellow;
       font-weight: bold;
+      -webkit-font-smoothing: subpixel-antialiased;
     }
 
     &.syntax--italic {
@@ -245,6 +250,7 @@
   &.syntax--bold {
     color: @orange;
     font-weight: bold;
+    -webkit-font-smoothing: subpixel-antialiased;
   }
 
   &.syntax--changed {
@@ -318,20 +324,15 @@
 
 .syntax--python .syntax--support.syntax--function.syntax--builtin.syntax--python {
   font-weight: bold;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 
-// for vue syntax
-.syntax--vue {
-  .syntax--tag.syntax--punctuation {
-    font-weight: 900;
-    opacity: 0.2;
-  }
-}
 
 .syntax--css {
   .syntax--terminator {
     font-weight: 900;
-    // opacity: 0.2;
+    -webkit-font-smoothing: subpixel-antialiased;
+    filter: brightness(30%);
   }
 }
