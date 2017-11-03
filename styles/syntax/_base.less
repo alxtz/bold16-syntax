@@ -74,6 +74,18 @@
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.syntax--variable {
+  color: @red;
+
+  &.syntax--interpolation {
+    color: @brown;
+  }
+
+  &.syntax--parameter.syntax--function {
+    color: @syntax-text-color;
+  }
+}
+
 .syntax--constant {
   color: @orange;
 
@@ -91,18 +103,6 @@
 
   &.syntax--other.syntax--symbol {
     color: @green;
-  }
-}
-
-.syntax--variable {
-  color: @red;
-
-  &.syntax--interpolation {
-    color: @brown;
-  }
-
-  &.syntax--parameter.syntax--function {
-    color: @syntax-text-color;
   }
 }
 
