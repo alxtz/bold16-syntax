@@ -1,16 +1,19 @@
-// Language syntax highlighting
-
 .syntax--comment {
   color: @gray;
-  opacity: 0.5;
+  // opacity: 0.5;
   font-style: italic;
   font-weight: 600;
+  filter: brightness(50%);
 
   .syntax--markup.syntax--link {
     color: @gray;
   }
   .syntax--punctuation {
     opacity: 1;
+    filter: brightness(100%);
+  }
+  .syntax--storage {
+    filter: brightness(150%);
   }
 }
 
@@ -83,6 +86,11 @@
 
   &.syntax--parameter.syntax--function {
     color: @syntax-text-color;
+  }
+
+  &.syntax--this {
+    color: @cyan;
+    font-weight: 900;
   }
 }
 
